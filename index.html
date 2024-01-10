@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ink. House</title>
+    <link rel="shortcut icon" href="./img/icons/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header container">
+        <a href="#!" class="header__logo">
+            <img src="./img/icons/logo-icon.svg" alt="Logotype icon" class="logo-icon">
+            <p>Ink. House</p>
+        </a>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <!-- <label for="" class="hamburger-menu">
+                    <input type="checkbox">
+                </label> -->
+                <button class="hamburger-button" id="burger">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="nav__items">
+                    <li><a href="#catalog" class="nav__item nav-burger-item">Репродукции</a></li>
+                    <li><a href="#!" class="nav__item nav-burger-item">Новинки</a></li>
+                    <li><a href="#!" class="nav__item nav-burger-item">О нас</a></li>
+                </div>
+                <li><a href="#!" class="nav__item cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewbox="0 0 22 22" fill="currentColor">
+                      <path d="M8.25001 20.1667C8.75627 20.1667 9.16668 19.7563 9.16668 19.25C9.16668 18.7438 8.75627 18.3334 8.25001 18.3334C7.74375 18.3334 7.33334 18.7438 7.33334 19.25C7.33334 19.7563 7.74375 20.1667 8.25001 20.1667Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M18.3333 20.1667C18.8396 20.1667 19.25 19.7563 19.25 19.25C19.25 18.7438 18.8396 18.3334 18.3333 18.3334C17.8271 18.3334 17.4167 18.7438 17.4167 19.25C17.4167 19.7563 17.8271 20.1667 18.3333 20.1667Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M0.916656 0.916626H4.58332L7.03999 13.1908C7.12381 13.6128 7.35341 13.9919 7.68857 14.2617C8.02374 14.5315 8.44313 14.6749 8.87332 14.6666H17.7833C18.2135 14.6749 18.6329 14.5315 18.9681 14.2617C19.3032 13.9919 19.5328 13.6128 19.6167 13.1908L21.0833 5.49996H5.49999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section container">
+        <div class="hero__image">
+            <img src="./img/illustartions/hero-illustration.png" alt="Hero illustration">
+        </div>
+        <main class="hero__text">
+            <h1 class="hero__title">Реплики картин от <span>Ink. House</span></h1>
+            <h2 class="hero__subtitle">Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</h2>
+            <a href="#!" class="button button__green hero__button">Продукция</a>
+        </main>
+    </section>
+
+    <section class="catalog-section container" id="catalog">
+        <div class="catalog-header">
+            <h2 class="catalog-title">Репродукции</h2>
+            <div class="catalog-header-buttons">
+                <button class="radio-button" id="france" data-filter="france">Франция</button>
+                <button class="radio-button" id="germany" data-filter="germany">Германия</button>
+                <button class="radio-button" id="england" data-filter="england">Англия</button>
+            </div>
+        </div>
+
+        <div class="catalog-cards">
+            <!-- France -->
+            <div class="catalog-card france">
+                <img src="./img/france-card/amur-hunt.jpg" alt="Amur's hunt" class="card-image">
+                <p class="card-author">Марсель Руссо</p>
+                <h3 class="card-name">Охота Амура</h3>
+                <p class="card-details">Холст, масло (50х80)</p>
+                <p class="card-price">14 500 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+
+            <div class="catalog-card france">
+                <img src="./img/france-card/madam-with-dog.jpg" alt="Madam with dog" class="card-image">
+                <p class="card-author">Анри Селин</p>
+                <h3 class="card-name">Дама с собачкой</h3>
+                <p class="card-details">Акрил, бумага (50х80)</p>
+                <p class="card-price">16 500 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+            
+            <div class="catalog-card france">
+                <img src="./img/france-card/procedure.jpg" alt="Procedure" class="card-image">
+                <p class="card-author">Франсуа Дюпон</p>
+                <h3 class="card-name">Процедура</h3>
+                <p class="card-details">Цветная литография (40х60)</p>
+                <p class="card-price">20 000 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+
+            <div class="catalog-card france">
+                <img src="./img/france-card/rose.jpg" alt="Rose" class="card-image">
+                <p class="card-author">Луи Детуш</p>
+                <h3 class="card-name">Роза</h3>
+                <p class="card-details">Бумага, акрил (50х80) </p>
+                <p class="card-price">12 000 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+
+            <div class="catalog-card france">
+                <img src="./img/france-card/birds-meal.jpg" alt="Bird's meal" class="card-image">
+                <p class="card-author">Франсуа Дюпон</p>
+                <h3 class="card-name">Птичья трапеза</h3>
+                <p class="card-details">Цветная литография (40х60) </p>
+                <p class="card-price">22 500 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+
+            <div class="catalog-card france">
+                <img src="./img/france-card/scenery-with-fish.jpg" alt="Bird's meal" class="card-image">
+                <p class="card-author">Пьер Моранж</p>
+                <h3 class="card-name">Пейзаж с рыбой</h3>
+                <p class="card-details">Цветная литография (40х60)</p>
+                <p class="card-price">20 000 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+
+
+            <!-- Germany -->
+            <div class="catalog-card germany">
+                <img src="./img/germany-card/above-the-city.jpg" alt="Above the city" class="card-image">
+                <p class="card-author">Курт Вернер</p>
+                <h3 class="card-name">Над городом</h3>
+                <p class="card-details">Цветная литография (40х60) </p>
+                <p class="card-price">16 000 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+
+            <div class="catalog-card germany">
+                <img src="./img/germany-card/chicks.jpg" alt="Chicks" class="card-image">
+                <p class="card-author">Макс Рихтер</p>
+                <h3 class="card-name">Птенцы</h3>
+                <p class="card-details">Холст, масло (50х80) </p>
+                <p class="card-price">14 500 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+            
+            <div class="catalog-card germany">
+                <img src="./img/germany-card/among-the-leaves.jpg" alt="Among the leaves" class="card-image">
+                <p class="card-author">Мартин Майер</p>
+                <h3 class="card-name">Среди листьев</h3>
+                <p class="card-details">Цветная литография (40х60)</p>
+                <p class="card-price">20 000 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+
+            <div class="catalog-card germany">
+                <img src="./img/germany-card/bright-bird.jpg" alt="Bright bird" class="card-image">
+                <p class="card-author">Герман Беккер</p>
+                <h3 class="card-name">Яркая птица</h3>
+                <p class="card-details">Цветная литография (40х60)</p>
+                <p class="card-price">13 000 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+
+            <div class="catalog-card germany">
+                <img src="./img/germany-card/woodpeckers.jpg" alt="Woodpeckers" class="card-image">
+                <p class="card-author">Вульф Бауэр</p>
+                <h3 class="card-name">Дятлы</h3>
+                <p class="card-details">Бумага, акрил (50х80)</p>
+                <p class="card-price">20 000 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+
+            <div class="catalog-card germany">
+                <img src="./img/germany-card/big-waters.jpg" alt="Big waters" class="card-image">
+                <p class="card-author">Вальтер Хартманн</p>
+                <h3 class="card-name">Большие воды</h3>
+                <p class="card-details">Бумага, акрил (50х80)</p>
+                <p class="card-price">23 000 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+
+
+            <!-- England -->
+            <div class="catalog-card england">
+                <img src="./img/england-card/wild-beast.jpg" alt="Wild beast" class="card-image">
+                <p class="card-author">Пол Смит</p>
+                <h3 class="card-name">Дикий зверь</h3>
+                <p class="card-details">Акварель, бумага (50х80)</p>
+                <p class="card-price">19 500 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+
+            <div class="catalog-card england">
+                <img src="./img/england-card/rocky-coast.jpg" alt="Rocky coast" class="card-image">
+                <p class="card-author">Джон Уайт</p>
+                <h3 class="card-name">Скалистый берег</h3>
+                <p class="card-details">Цветная литография (40х60) )</p>
+                <p class="card-price">17 500 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+            
+            <div class="catalog-card england">
+                <img src="./img/england-card/river-and-mountains.jpg" alt="Rivers and mountains" class="card-image">
+                <p class="card-author">Джим Уотсон</p>
+                <h3 class="card-name">Река и горы</h3>
+                <p class="card-details">Акварель, бумага (50х80) </p>
+                <p class="card-price">20 500 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+
+            <div class="catalog-card england">
+                <img src="./img/england-card/white-parrot.jpg" alt="White parrot" class="card-image">
+                <p class="card-author">Юджин Зиллион</p>
+                <h3 class="card-name">Белый попугай</h3>
+                <p class="card-details">Цветная литография (40х60) </p>
+                <p class="card-price">15 500 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+
+            <div class="catalog-card england">
+                <img src="./img/england-card/night-fish.jpg" alt="Night fish" class="card-image">
+                <p class="card-author">Эрик Гиллман</p>
+                <h3 class="card-name">Ночная рыба</h3>
+                <p class="card-details">Бумага, акрил (50х80)</p>
+                <p class="card-price">12 500 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+
+            <div class="catalog-card england">
+                <img src="./img/england-card/ginger-cat.jpg" alt="ginger cat" class="card-image">
+                <p class="card-author">Альфред Барр</p>
+                <h3 class="card-name">Рыжий кот</h3>
+                <p class="card-details">Цветная литография (40х60)</p>
+                <p class="card-price">21 000 руб</p>
+                <a href="#!" class="card-button button">В корзину</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="promo container">
+        <div class="promo-content">
+            <div class="promo-title">
+                <img src="img/icons/promo-title-icon.svg" alt="Promo icon">
+                <h2>Новая коллекция французских авторов</h2>
+            </div>
+            <p class="promo-text">
+                Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений.
+            </p>
+            <p class="promo-text promo-text-2">Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность направлений прогрессивного развития.</p>
+            <div class="promo-button-wrapper">
+                <a href="#!" class="promo-button button">Ознакомиться</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="team container">
+        <img src="img/illustartions/team-illustration.png" alt="Team illustration" class="team-image">
+        <div class="team-content">
+            <h2 class="team-title">Наша команда</h2>
+            <p class="team-subtitle">Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.</p>
+            <div class="team-avatars">
+                <img src="img/team-avatars/team-avatar-1.png" alt="Team avatar 1" class="team-avatar">
+                <img src="img/team-avatars/team-avatar-2.jpg" alt="Team avatar 2" class="team-avatar">
+                <img src="img/team-avatars/team-avatar-3.jpg" alt="Team avatar 3" class="team-avatar">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer container">
+        <div class="footer-info">
+            <a href="#!" class="footer-logo">
+                <img src="./img/icons/logo-icon.svg" alt="Logotype icon" class="logo-icon">
+                <p>Ink. House</p>
+            </a>
+            <div class="footer-number">
+                <a href="tel:+79995435454">+7 (999) 543-54-54</a>
+                <label for="">Мастерская</label>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="footer-links-group">
+                <p class="footer-links-title">Репродукции</p>
+                <a href="#!" class="footer-link">Франция</a>
+                <a href="#!" class="footer-link">Германия</a>
+                <a href="#!" class="footer-link">Англия</a>
+            </div>
+
+            <div class="footer-links-group">
+                <p class="footer-links-title">Новинки</p>
+                <a href="#!" class="footer-link">2021</a>
+                <a href="#!" class="footer-link">2020</a>
+            </div>
+
+            <div class="footer-links-group">
+                <p class="footer-links-title">О нас</p>
+                <a href="#!" class="footer-link">Художники</a>
+                <a href="#!" class="footer-link">Менеджеры</a>
+            </div>
+        </div>
+        <div class="footer-socials">
+            <div class="footer-socials-logos">
+                <a href="https://www.facebook.com/?locale=ru_RU">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="currentColor">
+                          <path d="M15.402 21V14.034H17.735L18.084 11.326H15.402V9.598C15.402 8.814 15.62 8.279 16.744 8.279H18.178V5.857C17.4838 5.78334 16.7861 5.74762 16.088 5.75C14.021 5.75 12.606 7.012 12.606 9.33V11.326H10.268V14.034H12.606V21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H15.402Z" />
+                      </svg>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z" />
+                        </svg>
+                </a>
+                <a href="https://www.youtube.com/">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.543 6.498C22 8.28 22 12 22 12C22 12 22 15.72 21.543 17.502C21.289 18.487 20.546 19.262 19.605 19.524C17.896 20 12 20 12 20C12 20 6.107 20 4.395 19.524C3.45 19.258 2.708 18.484 2.457 17.502C2 15.72 2 12 2 12C2 12 2 8.28 2.457 6.498C2.711 5.513 3.454 4.738 4.395 4.476C6.107 4 12 4 12 4C12 4 17.896 4 19.605 4.476C20.55 4.742 21.292 5.516 21.543 6.498ZM10 15.5L16 12L10 8.5V15.5Z" />
+                        </svg>
+                </a>
+            </div>
+            <div class="footer-socials-text">
+                <p>Ink. House ®</p>
+                <p>All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
